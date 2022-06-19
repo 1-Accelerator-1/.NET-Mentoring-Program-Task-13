@@ -1,0 +1,3 @@
+﻿ALTER TABLE dbo.[Order]
+ADD CONSTRAINT FK_Product_Order FOREIGN KEY (ProductId)     
+    REFERENCES dbo.Product (Id) ON UPDATE CASCADE ON DELETE CASCADE
